@@ -1,0 +1,37 @@
+[
+  {
+    "id_kategori": 1,
+    "nama_kategori": "fakir",
+    "jumlah_hak": 3.0
+  },
+  {
+    "id_kategori": 2,
+    "nama_kategori": "miskin",
+    "jumlah_hak": 2.5
+  },
+  {
+    "id_kategori": 3,
+    "nama_kategori": "mampu",
+    "jumlah_hak": 2.0
+  },
+  {
+    "id_kategori": 4,
+    "nama_kategori": "amilin",
+    "jumlah_hak": 2.5
+  },
+  {
+    "id_kategori": 5,
+    "nama_kategori": "fisabilillah",
+    "jumlah_hak": 2.5
+  },
+  {
+    "id_kategori": 6,
+    "nama_kategori": "muallaf",
+    "jumlah_hak": 2.5
+  },
+  {
+    "id_kategori": 7,
+    "nama_kategori": "ibnu_sabil",
+    "jumlah_hak": 2.5
+  }
+]

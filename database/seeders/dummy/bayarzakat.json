@@ -1,0 +1,902 @@
+[
+  {
+    "id_zakat":1,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":0.0,
+    "bayar_uang":90000.0
+  },
+  {
+    "id_zakat":2,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":0.0,
+    "bayar_uang":30000.0
+  },
+  {
+    "id_zakat":3,
+    "nama_kk":"Keluarga Andi",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":12.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":4,
+    "nama_kk":"Keluarga Andi",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":5,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":0.0,
+    "bayar_uang":30000.0
+  },
+  {
+    "id_zakat":6,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":0.0,
+    "bayar_uang":180000.0
+  },
+  {
+    "id_zakat":7,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":0.0,
+    "bayar_uang":120000.0
+  },
+  {
+    "id_zakat":8,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":9,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":0.0,
+    "bayar_uang":30000.0
+  },
+  {
+    "id_zakat":10,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":11,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":12,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":13,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":5.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":14,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":2.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":15,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":16,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":2.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":17,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":18,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":19,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":2.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":20,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":21,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":22,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":0.0,
+    "bayar_uang":30000.0
+  },
+  {
+    "id_zakat":23,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":0.0,
+    "bayar_uang":120000.0
+  },
+  {
+    "id_zakat":24,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":25,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":0.0,
+    "bayar_uang":30000.0
+  },
+  {
+    "id_zakat":26,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":10.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":27,
+    "nama_kk":"Keluarga Andi",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":5.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":28,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":0.0,
+    "bayar_uang":120000.0
+  },
+  {
+    "id_zakat":29,
+    "nama_kk":"Keluarga Andi",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":30,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":31,
+    "nama_kk":"Keluarga Andi",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":10.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":32,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":0.0,
+    "bayar_uang":150000.0
+  },
+  {
+    "id_zakat":33,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":5.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":34,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":0.0,
+    "bayar_uang":30000.0
+  },
+  {
+    "id_zakat":35,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":2.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":36,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":0.0,
+    "bayar_uang":120000.0
+  },
+  {
+    "id_zakat":37,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":0.0,
+    "bayar_uang":30000.0
+  },
+  {
+    "id_zakat":38,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":5.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":39,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":0.0,
+    "bayar_uang":180000.0
+  },
+  {
+    "id_zakat":40,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":0.0,
+    "bayar_uang":120000.0
+  },
+  {
+    "id_zakat":41,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":0.0,
+    "bayar_uang":180000.0
+  },
+  {
+    "id_zakat":42,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":12.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":43,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":0.0,
+    "bayar_uang":150000.0
+  },
+  {
+    "id_zakat":44,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":12.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":45,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":46,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":0.0,
+    "bayar_uang":120000.0
+  },
+  {
+    "id_zakat":47,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":48,
+    "nama_kk":"Keluarga Andi",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":49,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":10.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":50,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":0.0,
+    "bayar_uang":90000.0
+  },
+  {
+    "id_zakat":51,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":52,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":2.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":53,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":54,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":55,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":0.0,
+    "bayar_uang":180000.0
+  },
+  {
+    "id_zakat":56,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":12.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":57,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":2.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":58,
+    "nama_kk":"Keluarga Andi",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":59,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":0.0,
+    "bayar_uang":180000.0
+  },
+  {
+    "id_zakat":60,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":61,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":5.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":62,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":63,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":64,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":0.0,
+    "bayar_uang":150000.0
+  },
+  {
+    "id_zakat":65,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":0.0,
+    "bayar_uang":180000.0
+  },
+  {
+    "id_zakat":66,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":0.0,
+    "bayar_uang":90000.0
+  },
+  {
+    "id_zakat":67,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":68,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":5.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":69,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":70,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":0.0,
+    "bayar_uang":150000.0
+  },
+  {
+    "id_zakat":71,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":0.0,
+    "bayar_uang":90000.0
+  },
+  {
+    "id_zakat":72,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":10.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":73,
+    "nama_kk":"Keluarga Andi",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":10.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":74,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":75,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":10.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":76,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":2.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":77,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":78,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":79,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":12.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":80,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":81,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":82,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":0.0,
+    "bayar_uang":90000.0
+  },
+  {
+    "id_zakat":83,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":0.0,
+    "bayar_uang":150000.0
+  },
+  {
+    "id_zakat":84,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":10.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":85,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":0.0,
+    "bayar_uang":30000.0
+  },
+  {
+    "id_zakat":86,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":0.0,
+    "bayar_uang":90000.0
+  },
+  {
+    "id_zakat":87,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":0.0,
+    "bayar_uang":180000.0
+  },
+  {
+    "id_zakat":88,
+    "nama_kk":"Keluarga Siti",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":0.0,
+    "bayar_uang":30000.0
+  },
+  {
+    "id_zakat":89,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":90,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":91,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":15.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":92,
+    "nama_kk":"Keluarga Budi",
+    "jumlah_tanggungan_keluarga":6,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":6,
+    "bayar_beras":0.0,
+    "bayar_uang":180000.0
+  },
+  {
+    "id_zakat":93,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":4,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":4,
+    "bayar_beras":10.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":94,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":2.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":95,
+    "nama_kk":"Keluarga Dian",
+    "jumlah_tanggungan_keluarga":3,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":3,
+    "bayar_beras":7.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":96,
+    "nama_kk":"Keluarga Ahmad",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":0.0,
+    "bayar_uang":60000.0
+  },
+  {
+    "id_zakat":97,
+    "nama_kk":"Keluarga Rudi",
+    "jumlah_tanggungan_keluarga":5,
+    "jenis_bayar":"uang",
+    "jumlah_tanggungan_bayar":5,
+    "bayar_beras":0.0,
+    "bayar_uang":150000.0
+  },
+  {
+    "id_zakat":98,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":1,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":1,
+    "bayar_beras":2.5,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":99,
+    "nama_kk":"Keluarga Nurul",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":5.0,
+    "bayar_uang":0.0
+  },
+  {
+    "id_zakat":100,
+    "nama_kk":"Keluarga Fitri",
+    "jumlah_tanggungan_keluarga":2,
+    "jenis_bayar":"beras",
+    "jumlah_tanggungan_bayar":2,
+    "bayar_beras":5.0,
+    "bayar_uang":0.0
+  }
+]
