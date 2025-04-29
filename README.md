@@ -1,7 +1,7 @@
 
 # Website Distribusi Zakat Fitrah
 
-A modern hotel booking management system built with **Laravel 12**, designed to handle reservations, room management, and guest interactions. This project uses RESTful APIs and can optionally be integrated with React or Inertia.js.
+Sistem Informasi untuk memudahkan distribusi zakat fitrah.
 
 ---
 
@@ -13,7 +13,6 @@ A modern hotel booking management system built with **Laravel 12**, designed to 
 - Pengumpulan Zakat Fitrah
 - Distribusi Zakat Fitrah Warga
 - Distribusi Zakat Fitrah Mustahik
-- 🌐 API ready
 
 ---
 
@@ -31,8 +30,8 @@ A modern hotel booking management system built with **Laravel 12**, designed to 
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/hotel-app.git
-cd hotel-app
+git clone https://github.com/iqbal-mn694/website-zakat-fitrah.git
+cd website-zakat-fitrah
 ```
 
 ### 2. Install Dependencies
@@ -124,4 +123,4 @@ database/
 
 ## 📄 License
 
-MIT © 2025 YourName
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
