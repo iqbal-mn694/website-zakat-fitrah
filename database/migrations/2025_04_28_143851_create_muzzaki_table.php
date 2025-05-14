@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('id_muzzaki');
             $table->string('nama_muzzaki');
             $table->integer('jumlah_tanggungan');
-            $table->string('keterangan');
+            $table->string('keterangan')->nullable();
             $table->timestamps();
         });
     }

@@ -17,9 +17,26 @@ class MuzzakiData extends Seeder
     {
         $json = File::get(database_path('seeders/dummy/dummy_muzzaki.json'));
         $data = json_decode($json, true);
-
-        foreach ($data as $item) {
-            Muzzaki::create($item);
+        
+        // Process data in chunks of 100
+        $chunks = array_chunk($data, 100);
+        
+        foreach ($chunks as $chunk) {
+            DB::beginTransaction();
+            try {
+                foreach ($chunk as $item) {
+                    // Check if record already exists
+                    $exists = Muzzaki::where('id_muzzaki', $item['id_muzzaki'])->exists();
+                    
+                    if (!$exists) {
+                        Muzzaki::create($item);
+                    }
+                }
+                DB::commit();
+            } catch (\Exception $e) {
+                DB::rollBack();
+                throw $e;
+            }
         }
     }   
 }

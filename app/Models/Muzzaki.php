@@ -8,9 +8,9 @@ class Muzzaki extends Model
 {   
     protected $table = 'muzzaki';
     protected $primaryKey = 'id_muzzaki';
+    public $timestamps = true;
 
     protected $fillable = [
-        'id_muzzaki',
         'nama_muzzaki',
         'jumlah_tanggungan',
         'keterangan',

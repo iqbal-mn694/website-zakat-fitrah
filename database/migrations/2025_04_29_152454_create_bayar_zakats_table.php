@@ -17,8 +17,8 @@ return new class extends Migration
             $table->integer('jumlah_tanggungan_keluarga');
             $table->integer('jumlah_tanggungan_bayar');
             $table->enum('jenis_bayar', ['beras', 'uang']);
-            $table->string('bayar_beras');
-            $table->string('bayar_uang');
+            $table->string('bayar_beras')->nullable()->default('0');
+            $table->string('bayar_uang')->nullable()->default('0');
             $table->timestamps();
         });
     }

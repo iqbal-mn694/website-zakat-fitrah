@@ -1,4 +1,3 @@
-
 # Website Distribusi Zakat Fitrah
 
 Sistem Informasi untuk memudahkan distribusi zakat fitrah.
@@ -19,13 +18,26 @@ Sistem Informasi untuk memudahkan distribusi zakat fitrah.
 ## 🧰 Tech Stack
 
 - **Laravel 12**
+- PHP 8.2 or higher
 - MySQL / PostgreSQL
-- Laravel Breeze / Jetstream (for auth)
-- Tailwind CSS (optional)
+- Laravel Breeze (for authentication)
+- Tailwind CSS
+- Alpine.js
+- Vite
+- Axios
+- Pest PHP (for testing)
 
 ---
 
 ## 📦 Installation
+
+### Prerequisites
+
+- PHP 8.2 or higher
+- Composer
+- Node.js & NPM
+- MySQL/PostgreSQL
+- Git
 
 ### 1. Clone Repository
 
@@ -37,8 +49,16 @@ cd website-zakat-fitrah
 ### 2. Install Dependencies
 
 ```bash
+# Install PHP dependencies
 composer install
-npm install 
+
+# Install Node.js dependencies
+npm install
+
+# Build assets
+npm run build
+
+# Start development server
 npm run dev
 ```
 

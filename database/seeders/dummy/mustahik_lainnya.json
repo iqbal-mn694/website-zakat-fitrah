@@ -2,32 +2,47 @@
   {
     "id_mustahik_lainnya":1,
     "nama_mustahik":"Penerima Sari",
-    "kategori":"muallaf",
-    "hak":2.5
+    "kategori":"Fisabilillah",
+    "alamat":"Jl. Mawar No. 1",
+    "total_beras":25.0,
+    "total_uang":0,
+    "id_aturan_zakat":1
   },
   {
     "id_mustahik_lainnya":2,
     "nama_mustahik":"Penerima Ridwan",
-    "kategori":"fisabilillah",
-    "hak":2.5
+    "kategori":"Fisabilillah",
+    "alamat":"Jl. Melati No. 2",
+    "total_beras":25.0,
+    "total_uang":0,
+    "id_aturan_zakat":2
   },
   {
     "id_mustahik_lainnya":3,
-    "nama_mustahik":"Penerima Ridwan",
-    "kategori":"fisabilillah",
-    "hak":2.5
+    "nama_mustahik":"Penerima Taufik",
+    "kategori":"Ibnu Sabil",
+    "alamat":"Jl. Anggrek No. 3",
+    "total_beras":25.0,
+    "total_uang":0,
+    "id_aturan_zakat":3
   },
   {
     "id_mustahik_lainnya":4,
-    "nama_mustahik":"Penerima Taufik",
-    "kategori":"ibnu_sabil",
-    "hak":2.5
+    "nama_mustahik":"Penerima Zulaikha",
+    "kategori":"Muallaf",
+    "alamat":"Jl. Dahlia No. 4",
+    "total_beras":25.0,
+    "total_uang":0,
+    "id_aturan_zakat":4
   },
   {
     "id_mustahik_lainnya":5,
-    "nama_mustahik":"Penerima Zulaikha",
-    "kategori":"muallaf",
-    "hak":2.5
+    "nama_mustahik":"Penerima Nurhayati",
+    "kategori":"Amilin",
+    "alamat":"Jl. Kenanga No. 5",
+    "total_beras":25.0,
+    "total_uang":0,
+    "id_aturan_zakat":5
   },
   {
     "id_mustahik_lainnya":6,

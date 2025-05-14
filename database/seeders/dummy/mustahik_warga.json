@@ -3,91 +3,106 @@
     "id_mustahik_warga":1,
     "nama_mustahik":"Warga Hasan",
     "kategori":"fakir",
-    "hak":3.0
+    "hak":3.0,
+    "id_aturan_zakat":1
   },
   {
     "id_mustahik_warga":2,
     "nama_mustahik":"Warga Wawan",
     "kategori":"fakir",
-    "hak":3.0
+    "hak":3.0,
+    "id_aturan_zakat":2
   },
   {
     "id_mustahik_warga":3,
     "nama_mustahik":"Warga Sulaiman",
     "kategori":"miskin",
-    "hak":2.5
+    "hak":2.5,
+    "id_aturan_zakat":3
   },
   {
     "id_mustahik_warga":4,
     "nama_mustahik":"Warga Sri",
     "kategori":"miskin",
-    "hak":2.5
+    "hak":2.5,
+    "id_aturan_zakat":4
   },
   {
     "id_mustahik_warga":5,
     "nama_mustahik":"Warga Sulaiman",
     "kategori":"fakir",
-    "hak":3.0
+    "hak":3.0,
+    "id_aturan_zakat":5
   },
   {
     "id_mustahik_warga":6,
     "nama_mustahik":"Warga Sulaiman",
     "kategori":"fakir",
-    "hak":3.0
+    "hak":3.0,
+    "id_aturan_zakat":1
   },
   {
     "id_mustahik_warga":7,
     "nama_mustahik":"Warga Hasan",
     "kategori":"fakir",
-    "hak":3.0
+    "hak":3.0,
+    "id_aturan_zakat":2
   },
   {
     "id_mustahik_warga":8,
     "nama_mustahik":"Warga Hasan",
     "kategori":"miskin",
-    "hak":2.5
+    "hak":2.5,
+    "id_aturan_zakat":3
   },
   {
     "id_mustahik_warga":9,
     "nama_mustahik":"Warga Dian",
     "kategori":"fakir",
-    "hak":3.0
+    "hak":3.0,
+    "id_aturan_zakat":4
   },
   {
     "id_mustahik_warga":10,
     "nama_mustahik":"Warga Hasan",
     "kategori":"miskin",
-    "hak":2.5
+    "hak":2.5,
+    "id_aturan_zakat":5
   },
   {
     "id_mustahik_warga":11,
     "nama_mustahik":"Warga Sri",
     "kategori":"mampu",
-    "hak":2.0
+    "hak":2.0,
+    "id_aturan_zakat":1
   },
   {
     "id_mustahik_warga":12,
     "nama_mustahik":"Warga Sulaiman",
     "kategori":"fakir",
-    "hak":3.0
+    "hak":3.0,
+    "id_aturan_zakat":2
   },
   {
     "id_mustahik_warga":13,
     "nama_mustahik":"Warga Dian",
     "kategori":"fakir",
-    "hak":3.0
+    "hak":3.0,
+    "id_aturan_zakat":3
   },
   {
     "id_mustahik_warga":14,
     "nama_mustahik":"Warga Hasan",
     "kategori":"fakir",
-    "hak":3.0
+    "hak":3.0,
+    "id_aturan_zakat":4
   },
   {
     "id_mustahik_warga":15,
     "nama_mustahik":"Warga Wawan",
     "kategori":"mampu",
-    "hak":2.0
+    "hak":2.0,
+    "id_aturan_zakat":5
   },
   {
     "id_mustahik_warga":16,

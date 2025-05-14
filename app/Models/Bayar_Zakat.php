@@ -8,21 +8,22 @@ class Bayar_Zakat extends Model
 {   
     protected $table = 'bayar_zakats';
     protected $primaryKey = 'id_zakat';
+    public $timestamps = true;
 
     protected $fillable = [
-        'id_zakat',
         'nama_kk',
         'jumlah_tanggungan_keluarga',
         'jumlah_tanggungan_bayar',
         'jenis_bayar',
         'bayar_beras',
-        'bayar_uang'
+        'bayar_uang',
     ];
 
-    public function muzzaki()
-    {
-        return $this->belongsTo(Muzzaki::class, 'id_muzzaki', 'id_muzzaki');
-    }
+    protected $casts = [
+        'jenis_bayar' => 'string',
+        'jumlah_tanggungan_keluarga' => 'integer',
+        'jumlah_tanggungan_bayar' => 'integer',
+    ];
 
     public function kategori()
     {
