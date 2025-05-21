@@ -18,13 +18,13 @@ class AturanZakat extends Model
     // Relasi dengan mustahik warga
     public function mustahikWarga()
     {
-        return $this->hasMany(Mustahik_Warga::class, 'id_aturan_zakat');
+        return $this->hasMany(MustahikWarga::class, 'id_aturan_zakat');
     }
 
     // Relasi dengan mustahik lainnya
     public function mustahikLainnya()
     {
-        return $this->hasMany(Mustahik_Lainnya::class, 'id_aturan_zakat');
+        return $this->hasMany(MustahikLainnya::class, 'id_aturan_zakat');
     }
 
     // Method untuk menghitung hak beras berdasarkan jumlah jiwa

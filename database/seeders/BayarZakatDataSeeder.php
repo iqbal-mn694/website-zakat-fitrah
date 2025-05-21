@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\Bayar_Zakat;
+use App\Models\BayarZakat;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 
-class BayarZakat extends Seeder
+class BayarZakatDataSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,7 +18,7 @@ class BayarZakat extends Seeder
         $data = json_decode($json, true);
 
         foreach ($data as $item) {
-            Bayar_Zakat::create($item);
+            BayarZakat::create($item);
         }
     }
 }

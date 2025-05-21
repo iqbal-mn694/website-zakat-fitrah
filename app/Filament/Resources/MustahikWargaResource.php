@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\MustahikWargaResource\Pages;
 use App\Filament\Resources\MustahikWargaResource\RelationManagers;
-use App\Models\Mustahik_Warga;
+use App\Models\MustahikWarga;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class MustahikWargaResource extends Resource
 {
-    protected static ?string $model = Mustahik_Warga::class;
+    protected static ?string $model = MustahikWarga::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     

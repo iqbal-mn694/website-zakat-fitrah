@@ -5,9 +5,10 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Bayar_Zakat;
-use App\Models\Mustahik_Warga;
-use App\Models\Mustahik_Lainnya;
+use App\Models\BayarZakat;
+use App\Models\MustahikWarga;
+use App\Models\MustahikLainnya;
+use App\Models\KategoriMustahik;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,16 +20,16 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             MuzzakiData::class,
-            KategoriMustahik::class,
+            KategoriMustahikSeeder::class,
             AturanZakatSeeder::class,
-            MustahikLainnya::class,
-            MustahikWarga::class,
+            MustahikLainnyaDataSeeder::class,
+            MustahikWargaDataSeeder::class,
             BayarZakat::class,
             TambahDataSeeder::class,
         ]);
 
         // Data Pengumpulan Zakat
-        Bayar_Zakat::create([
+        BayarZakat::create([
             'nama_kk' => 'Keluarga Iqbal',
             'jumlah_tanggungan_keluarga' => 4,
             'jumlah_tanggungan_bayar' => 4,
@@ -37,7 +38,7 @@ class DatabaseSeeder extends Seeder
             'bayar_uang' => '0'
         ]);
 
-        Bayar_Zakat::create([
+        BayarZakat::create([
             'nama_kk' => 'Keluarga Budi',
             'jumlah_tanggungan_keluarga' => 3,
             'jumlah_tanggungan_bayar' => 3,
@@ -47,20 +48,20 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // Data Mustahik Warga
-        Mustahik_Warga::create([
+        MustahikWarga::create([
             'nama_mustahik' => 'Ahmad',
             'kategori' => 'Fakir',
             'hak' => 10.5
         ]);
 
-        Mustahik_Warga::create([
+        MustahikWarga::create([
             'nama_mustahik' => 'Budi',
             'kategori' => 'Miskin',
             'hak' => 7.5
         ]);
 
         // Data Mustahik Lainnya
-        Mustahik_Lainnya::create([
+        MustahikLainnya::create([
             'nama_mustahik' => 'Pesantren Al-Hidayah',
             'kategori' => 'Fisabilillah',
             'alamat' => 'Jl. Raya No. 123',

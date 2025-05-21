@@ -2,13 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\Mustahik_Lainnya;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
-class MustahikLainnya extends Seeder
+class MustahikLainnyaDataSeeder extends Seeder
 {
     /**
      * Run the database seeds.

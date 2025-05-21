@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Mustahik_Warga;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\MustahikWarga;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
-class MustahikWarga extends Seeder
+
+class MustahikWargaDataSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,7 +17,9 @@ class MustahikWarga extends Seeder
         $data = json_decode($json, true);
 
         foreach ($data as $item) {
-            Mustahik_Warga::create($item);
+            MustahikWarga::create($item);
         }
+
+
     }
 }

@@ -2,13 +2,13 @@
 
 namespace Database\Seeders;
 
-use App\Models\Kategori_Mustahik;
+use App\Models\KategoriMustahik;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
-class KategoriMustahik extends Seeder
+class KategoriMustahikSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -22,10 +22,10 @@ class KategoriMustahik extends Seeder
         try {
             foreach ($data as $item) {
                 // Check if record already exists
-                $exists = Kategori_Mustahik::where('id_kategori', $item['id_kategori'])->exists();
+                $exists = KategoriMustahik::where('id_kategori', $item['id_kategori'])->exists();
                 
                 if (!$exists) {
-                    Kategori_Mustahik::create($item);
+                    KategoriMustahik::create($item);
                 }
             }
             DB::commit();

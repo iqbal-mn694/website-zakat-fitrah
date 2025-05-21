@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\KategoriMustahikResource\Pages;
 use App\Filament\Resources\KategoriMustahikResource\RelationManagers;
-use App\Models\Kategori_Mustahik;
+use App\Models\KategoriMustahik;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class KategoriMustahikResource extends Resource
 {
-    protected static ?string $model = Kategori_Mustahik::class;
+    protected static ?string $model = KategoriMustahik::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     

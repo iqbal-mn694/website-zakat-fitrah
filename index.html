@@ -1,0 +1,188 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   ResTel
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom dropdown arrow rotation */
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+ </head>
+ <body class="bg-[#E3E3E3] font-sans text-[#1A1A1A]">
+  <header class="flex items-center justify-between px-4 py-3">
+   <button aria-label="Menu" class="bg-[#D9D9D9] rounded-full px-3 py-1 text-sm font-normal">
+    Menu
+   </button>
+   <div class="flex items-center space-x-2">
+    <div class="w-6 h-6 bg-[#BFBFBF] rounded-sm">
+    </div>
+    <span class="font-bold text-base select-none">
+     ResTel
+    </span>
+   </div>
+   <div class="flex space-x-3">
+    <button class="bg-black text-white rounded-full px-4 py-1 text-sm font-normal" type="button">
+     Login
+    </button>
+    <button class="border border-black rounded-full px-4 py-1 text-sm font-normal" type="button">
+     Register
+    </button>
+   </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-4">
+   <div class="flex flex-col md:flex-row md:space-x-6">
+    <!-- Left filter panel -->
+    <aside class="w-full md:w-64 flex-shrink-0 mb-6 md:mb-0">
+     <div class="flex items-center justify-between mb-4">
+      <h2 class="font-bold text-base select-none">
+       Filter
+      </h2>
+      <button class="text-sm font-normal text-[#1A1A1A] select-none" type="button">
+       Reset
+      </button>
+     </div>
+     <form class="space-y-4 text-sm font-normal text-[#1A1A1A]">
+      <details class="group" open="">
+       <summary class="flex justify-between items-center cursor-pointer list-none select-none">
+        <span class="font-semibold">
+         Harga per Malam
+        </span>
+        <i aria-hidden="true" class="fas fa-chevron-down transition-transform duration-200 group-open:rotate-180">
+        </i>
+       </summary>
+       <div class="mt-2 flex items-center space-x-2">
+        <label class="text-xs font-normal select-none" for="min-price">
+         Min
+        </label>
+        <input class="w-28 rounded border border-[#B3B3B3] bg-[#E3E3E3] px-2 py-1 text-xs font-normal text-[#1A1A1A] focus:outline-none" id="min-price" type="text" value="Rp 100.000.000"/>
+        <span class="text-sm font-normal select-none">
+         -
+        </span>
+        <label class="text-xs font-normal select-none" for="max-price">
+         Max
+        </label>
+        <input class="w-28 rounded border border-[#B3B3B3] bg-[#E3E3E3] px-2 py-1 text-xs font-normal text-[#1A1A1A] focus:outline-none" id="max-price" type="text" value="Rp 100.000.000"/>
+       </div>
+      </details>
+      <details class="group">
+       <summary class="flex justify-between items-center cursor-pointer list-none select-none">
+        <span class="font-semibold">
+         Rating
+        </span>
+        <i aria-hidden="true" class="fas fa-chevron-down transition-transform duration-200 group-open:rotate-180">
+        </i>
+       </summary>
+      </details>
+      <details class="group">
+       <summary class="flex justify-between items-center cursor-pointer list-none select-none">
+        <span class="font-semibold">
+         Lokasi
+        </span>
+        <i aria-hidden="true" class="fas fa-chevron-down transition-transform duration-200 group-open:rotate-180">
+        </i>
+       </summary>
+      </details>
+      <details class="group">
+       <summary class="flex justify-between items-center cursor-pointer list-none select-none">
+        <span class="font-semibold">
+         Fasilitas
+        </span>
+        <i aria-hidden="true" class="fas fa-chevron-down transition-transform duration-200 group-open:rotate-180">
+        </i>
+       </summary>
+      </details>
+     </form>
+    </aside>
+    <!-- Right content -->
+    <section class="flex-1">
+     <form aria-label="Search filters" class="flex flex-wrap items-center space-x-2 space-y-2 bg-white rounded-md p-2 mb-4 max-w-full">
+      <button class="flex items-center space-x-1 rounded-md border border-[#B3B3B3] bg-white px-3 py-1 text-xs font-normal text-[#1A1A1A]" type="button">
+       <i aria-hidden="true" class="fas fa-map-marker-alt text-[#7A7A7A]">
+       </i>
+       <div class="flex flex-col leading-none text-left">
+        <span class="text-[10px] font-normal text-[#7A7A7A] select-none">
+         Kota/Tujuan
+        </span>
+        <span class="font-semibold select-none">
+         Tasikmalaya
+        </span>
+       </div>
+      </button>
+      <button class="flex items-center space-x-1 rounded-md border border-[#B3B3B3] bg-white px-3 py-1 text-xs font-normal text-[#1A1A1A]" type="button">
+       <i aria-hidden="true" class="fas fa-calendar-alt text-[#7A7A7A]">
+       </i>
+       <div class="flex flex-col leading-none text-left">
+        <span class="text-[10px] font-normal text-[#7A7A7A] select-none">
+         Tanggal Reservasi
+        </span>
+        <div class="flex space-x-1 font-semibold select-none">
+         <span>
+          12 Okt
+         </span>
+         <span class="bg-[#B3B3B3] rounded-md px-2">
+          3 Malam
+         </span>
+         <span>
+          15 Okt
+         </span>
+        </div>
+       </div>
+      </button>
+      <button class="flex items-center space-x-1 rounded-md border border-[#B3B3B3] bg-white px-3 py-1 text-xs font-normal text-[#1A1A1A]" type="button">
+       <i aria-hidden="true" class="fas fa-users text-[#7A7A7A]">
+       </i>
+       <div class="flex flex-col leading-none text-left">
+        <span class="text-[10px] font-normal text-[#7A7A7A] select-none">
+         Ruangan
+        </span>
+        <span class="font-semibold select-none">
+         2 Orang
+        </span>
+       </div>
+      </button>
+      <button aria-label="Search" class="bg-[#0089C9] rounded-md px-3 py-2 text-white" type="submit">
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </form>
+     <div class="flex justify-between items-center mb-3">
+      <h3 class="font-semibold text-base select-none">
+       124 Kamar Ditemukan
+      </h3>
+      <form>
+       <label class="sr-only" for="sort">
+        Sortir
+       </label>
+       <select class="border border-[#B3B3B3] rounded-md text-xs font-normal text-[#1A1A1A] px-2 py-1" id="sort" name="sort">
+        <option>
+         Populer
+        </option>
+       </select>
+      </form>
+     </div>
+     <article class="flex space-x-4 bg-white rounded-md p-3 max-w-md">
+      <img alt="Placeholder image of a room with white background and rounded corners" class="w-24 h-24 rounded-md flex-shrink-0" height="100" src="https://storage.googleapis.com/a1aa/image/f227928d-f5fb-4846-ac62-998f4c1cdf1e.jpg" width="100"/>
+      <div class="flex flex-col justify-between text-xs font-normal text-[#1A1A1A]">
+       <p class="font-semibold text-sm leading-tight">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+       </p>
+       <p class="text-[10px] leading-none select-none">
+        Tasikmalaya, Tasikmalaya
+       </p>
+       <p class="font-semibold text-sm select-none">
+        Rp 414.192
+       </p>
+      </div>
+     </article>
+    </section>
+   </div>
+  </main>
+ </body>
+</html>

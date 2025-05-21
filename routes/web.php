@@ -37,6 +37,9 @@ Route::post('/mustahik-lainnya', [App\Http\Controllers\MustahikLainnyaController
 // Distribusi Zakat Routes
 Route::get('/distribusi-zakat', [App\Http\Controllers\DistribusiZakatController::class, 'index'])->name('distribusi-zakat.index');
 Route::get('/distribusi-zakat/search', [App\Http\Controllers\DistribusiZakatController::class, 'search'])->name('distribusi-zakat.search');
+Route::get('/admin/laporan-distribusi/export-pdf', 
+    [\App\Filament\Pages\LaporanDistribusi::class, 'exportViaRoute'])
+    ->name('filament.admin.pages.laporan-distribusi.export-pdf');
 
 // Laporan Routes
 Route::get('/laporan/distribusi', [LaporanController::class, 'distribusi'])->name('laporan.distribusi');
@@ -45,9 +48,9 @@ Route::get('/laporan/pengumpulan', [LaporanController::class, 'pengumpulan'])->n
 // Temporary route for checking data
 Route::get('/check-data', function() {
     $data = [
-        'bayar_zakat' => App\Models\Bayar_Zakat::all(),
-        'mustahik_warga' => App\Models\Mustahik_Warga::all(),
-        'mustahik_lainnya' => App\Models\Mustahik_Lainnya::all(),
+        'bayar_zakat' => App\Models\BayarZakat::all(),
+        'mustahik_warga' => App\Models\MustahikWarga::all(),
+        'mustahik_lainnya' => App\Models\MustahikLainnya::all(),
     ];
     return response()->json($data);
 });

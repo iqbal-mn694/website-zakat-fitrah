@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Bayar_Zakat;
+use App\Models\BayarZakat;
 use Illuminate\Http\Request;
 
 class DistribusiZakatController extends Controller
 {
     public function index()
     {
-        $pengumpulanZakat = Bayar_Zakat::orderBy('created_at', 'desc')
+        $pengumpulanZakat = BayarZakat::orderBy('created_at', 'desc')
             ->paginate(10);
         
         // Hitung total
-        $totalBeras = Bayar_Zakat::where('jenis_bayar', 'beras')->sum('bayar_beras');
-        $totalUang = Bayar_Zakat::where('jenis_bayar', 'uang')->sum('bayar_uang');
+        $totalBeras = BayarZakat::where('jenis_bayar', 'beras')->sum('bayar_beras');
+        $totalUang = BayarZakat::where('jenis_bayar', 'uang')->sum('bayar_uang');
         
         return view('distribusi-zakat', compact('pengumpulanZakat', 'totalBeras', 'totalUang'));
     }
@@ -23,7 +23,7 @@ class DistribusiZakatController extends Controller
     {
         $query = $request->input('query');
         
-        $pengumpulanZakat = Bayar_Zakat::where(function($q) use ($query) {
+        $pengumpulanZakat = BayarZakat::where(function($q) use ($query) {
                 $q->where('nama_kk', 'like', "%{$query}%")
                   ->orWhere('jenis_bayar', 'like', "%{$query}%");
             })
@@ -35,8 +35,8 @@ class DistribusiZakatController extends Controller
         }
 
         // Hitung total
-        $totalBeras = Bayar_Zakat::where('jenis_bayar', 'beras')->sum('bayar_beras');
-        $totalUang = Bayar_Zakat::where('jenis_bayar', 'uang')->sum('bayar_uang');
+        $totalBeras = BayarZakat::where('jenis_bayar', 'beras')->sum('bayar_beras');
+        $totalUang = BayarZakat::where('jenis_bayar', 'uang')->sum('bayar_uang');
 
         return view('distribusi-zakat', compact('pengumpulanZakat', 'totalBeras', 'totalUang'));
     }

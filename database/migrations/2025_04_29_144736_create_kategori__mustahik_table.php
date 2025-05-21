@@ -21,18 +21,23 @@ return new class extends Migration
         Schema::create('aturan_zakat', function (Blueprint $table) {
             $table->id();
             $table->string('nama_daerah');
-            $table->decimal('standar_beras_per_jiwa', 10, 2);
-            $table->decimal('harga_beras_per_kg', 10, 2);
+            $table->float('standar_beras_per_jiwa', 4, 2);
+            $table->integer('harga_beras_per_kg');
             $table->text('keterangan')->nullable();
             $table->timestamps();
         });
 
-        Schema::create('mustahik__wargas', function (Blueprint $table) {
+        Schema::create('mustahik_wargas', function (Blueprint $table) {
             $table->id('id_mustahik_warga');
             $table->string('nama_mustahik');
             $table->string('kategori');
-            $table->float('hak');
-            $table->foreignId('id_aturan_zakat')->nullable()->constrained('aturan_zakat')->onDelete('set null');
+            $table->float('hak', 8, 2);
+            $table->unsignedBigInteger('id_aturan_zakat');
+            
+            $table->foreign('id_aturan_zakat')
+                ->references('id')
+                ->on('aturan_zakat')
+                ->onDelete('cascade');
             $table->timestamps();
         });
 
@@ -46,6 +51,17 @@ return new class extends Migration
             $table->foreignId('id_aturan_zakat')->nullable()->constrained('aturan_zakat')->onDelete('set null');
             $table->timestamps();
         });
+
+        Schema::create('bayar_zakats', function (Blueprint $table) {
+            $table->id('id_zakat');
+            $table->string('nama_kk');
+            $table->integer('jumlah_tanggungan_keluarga');
+            $table->integer('jumlah_tanggungan_bayar');
+            $table->enum('jenis_bayar', ['beras', 'uang']);
+            $table->string('bayar_beras')->nullable()->default('0');
+            $table->string('bayar_uang')->nullable()->default('0');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -54,8 +70,10 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('mustahik_lainnyas');
-        Schema::dropIfExists('mustahik__wargas');
+        Schema::dropIfExists('mustahik_wargas');
         Schema::dropIfExists('aturan_zakat');
         Schema::dropIfExists('kategori_mustahik');
+        Schema::dropIfExists('bayar_zakats');
+
     }
 };

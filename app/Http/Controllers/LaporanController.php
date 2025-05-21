@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Bayar_Zakat;
-use App\Models\Mustahik_Warga;
-use App\Models\Mustahik_Lainnya;
+use App\Models\BayarZakat;
+use App\Models\MustahikWarga;
+use App\Models\MustahikLainnya;
 use App\Models\AturanZakat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -15,18 +15,18 @@ class LaporanController extends Controller
     public function pengumpulan()
     {
         // Data pengumpulan zakat
-        $pengumpulanZakat = Bayar_Zakat::orderBy('created_at', 'desc')->get();
+        $pengumpulanZakat = BayarZakat::orderBy('created_at', 'desc')->get();
         
         // Total muzakki = jumlah unik nama_kk
-        $totalMuzakki = Bayar_Zakat::distinct('nama_kk')->count('nama_kk');
+        $totalMuzakki = BayarZakat::distinct('nama_kk')->count('nama_kk');
         
         // Total jiwa = jumlah total tanggungan bayar
-        $totalJiwa = Bayar_Zakat::sum('jumlah_tanggungan_bayar');
+        $totalJiwa = BayarZakat::sum('jumlah_tanggungan_bayar');
         
         // Total zakat terkumpul
-        $totalBeras = Bayar_Zakat::where('jenis_bayar', 'beras')
+        $totalBeras = BayarZakat::where('jenis_bayar', 'beras')
             ->sum(DB::raw('CAST(bayar_beras AS DECIMAL(10,2))'));
-        $totalUang = Bayar_Zakat::where('jenis_bayar', 'uang')
+        $totalUang = BayarZakat::where('jenis_bayar', 'uang')
             ->sum(DB::raw('CAST(bayar_uang AS DECIMAL(15,2))'));
 
         // Total zakat yang sudah didistribusikan

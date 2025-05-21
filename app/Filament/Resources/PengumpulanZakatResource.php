@@ -3,7 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\PengumpulanZakatResource\Pages;
-use App\Models\Bayar_Zakat;
+use App\Models\BayarZakat;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -12,7 +12,7 @@ use Filament\Tables\Table;
 
 class PengumpulanZakatResource extends Resource
 {
-    protected static ?string $model = Bayar_Zakat::class;
+    protected static ?string $model = BayarZakat::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-currency-dollar';
     
