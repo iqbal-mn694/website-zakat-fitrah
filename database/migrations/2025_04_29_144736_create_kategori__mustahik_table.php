@@ -55,9 +55,9 @@ return new class extends Migration
         Schema::create('bayar_zakats', function (Blueprint $table) {
             $table->id('id_zakat');
             $table->string('nama_kk');
-            $table->integer('jumlah_tanggungan_keluarga')->nullable()->default(0);
-            $table->integer('jumlah_tanggungan_bayar')->nullable()->default(0);
-            $table->enum('jenis_bayar', ['beras', 'uang'])->nullable();
+            $table->integer('jumlah_tanggungan_keluarga');
+            $table->integer('jumlah_tanggungan_bayar');
+            $table->enum('jenis_bayar', ['beras', 'uang']);
             $table->string('bayar_beras')->nullable()->default('0');
             $table->string('bayar_uang')->nullable()->default('0');
             $table->timestamps();

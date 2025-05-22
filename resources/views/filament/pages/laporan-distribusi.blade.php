@@ -59,7 +59,7 @@
 
     <a href="{{ route('filament.admin.pages.laporan-distribusi.export-pdf') }}"
        class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">Export PDF</a>
-
+       
     {{-- Total --}}
     <div class="mt-6 text-right font-semibold text-lg">
         Total Distribusi Beras: {{ $totalDistribusiBeras }} Kg

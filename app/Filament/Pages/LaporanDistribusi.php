@@ -26,7 +26,7 @@ class LaporanDistribusi extends Page
 
     protected function loadData(): void
     {
-        $this->rekapWarga = DB::table('mustahik_wargas as mw')
+        $this->rekapWarga = DB::table('mustahik__wargas as mw')
             ->join('aturan_zakat as az', 'mw.id_aturan_zakat', '=', 'az.id')
             ->select(
                 'mw.kategori',
@@ -52,21 +52,22 @@ class LaporanDistribusi extends Page
             ->get()
             ->toArray();
 
-        $this->totalDistribusiBeras = DB::table('mustahik_wargas')->sum('hak') +
+        $this->totalDistribusiBeras = DB::table('mustahik__wargas')->sum('hak') +
                                     DB::table('mustahik_lainnyas')->sum('total_beras');
     }
 
     public function exportPdf()
-    {   
-        $this->loadData();
-        
-        // Ini berada DI DALAM method exportPdf, bukan di luar
-        $pdf = Pdf::loadView('exports.laporan-distribusi', [
-            'rekapWarga' => $this->rekapWarga,
-            'rekapLainnya' => $this->rekapLainnya,
-            'totalDistribusiBeras' => $this->totalDistribusiBeras,
-        ]);
+{
+    $rekapWarga = $this->rekapWarga;
+    $rekapLainnya = $this->rekapLainnya;
+    $totalDistribusiBeras = $this->totalDistribusiBeras;
 
+    // dd($rekapWarga);
+
+    $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView(
+        'filament.pages.laporan-distribusi',
+        compact('rekapWarga', 'rekapLainnya', 'totalDistribusiBeras')
+    );
 
     return response()->streamDownload(function () use ($pdf) {
         echo $pdf->stream();
@@ -81,5 +82,16 @@ class LaporanDistribusi extends Page
             ->color('success')
     ];
     }
+
+    // Di LaporanDistribusi.php
+public static function exportViaRoute()
+{
+    $instance = new static();
+    $instance->mount();
+    return $instance->exportPdf();
+}
+
+
+    // Di dalam class LaporanDistribusi
 
 }
