@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Mustahik_Lainnya;
+use App\Models\MustahikLainnya;
 use App\Models\AturanZakat;
 use Illuminate\Http\Request;
 
@@ -25,7 +25,7 @@ class MustahikLainnyaController extends Controller
             'id_aturan_zakat' => 'required|exists:aturan_zakat,id_aturan_zakat'
         ]);
 
-        Mustahik_Lainnya::create([
+        MustahikLainnya::create([
             'nama_mustahik' => $request->nama_mustahik,
             'kategori' => $request->kategori,
             'alamat' => $request->alamat,

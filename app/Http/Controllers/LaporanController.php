@@ -30,7 +30,7 @@ class LaporanController extends Controller
             ->sum(DB::raw('CAST(bayar_uang AS DECIMAL(15,2))'));
 
         // Total zakat yang sudah didistribusikan
-        $totalDistribusiBeras = DB::table('mustahik__wargas')->sum('hak') + 
+        $totalDistribusiBeras = DB::table('mustahik_wargas')->sum('hak') + 
                                DB::table('mustahik_lainnyas')->sum('total_beras');
 
         // Sisa zakat yang belum didistribusikan
@@ -60,7 +60,7 @@ class LaporanController extends Controller
     public function distribusi()
     {
         // Rekap warga: group by kategori dan aturan zakat
-        $rekapWarga = DB::table('mustahik__wargas as mw')
+        $rekapWarga = DB::table('mustahik_wargas as mw')
             ->join('aturan_zakat as az', 'mw.id_aturan_zakat', '=', 'az.id')
             ->select(
                 'mw.kategori',
@@ -106,7 +106,7 @@ class LaporanController extends Controller
         });
 
         // Hitung total distribusi beras
-        $totalDistribusiBeras = DB::table('mustahik__wargas')->sum('hak') + 
+        $totalDistribusiBeras = DB::table('mustahik_wargas')->sum('hak') + 
                                DB::table('mustahik_lainnyas')->sum('total_beras');
 
         return view('laporan.distribusi', compact(

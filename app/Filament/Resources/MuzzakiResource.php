@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\MuzzakiResource\Pages;
-use App\Filament\Resources\MuzzakiResource;
 use App\Filament\Resources\MuzzakiResource\RelationManagers;
 use App\Models\Muzzaki;
 use Filament\Forms;

@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             AturanZakatSeeder::class,
             MustahikLainnyaDataSeeder::class,
             MustahikWargaDataSeeder::class,
-            BayarZakat::class,
+            BayarZakatDataSeeder::class,
             TambahDataSeeder::class,
         ]);
 

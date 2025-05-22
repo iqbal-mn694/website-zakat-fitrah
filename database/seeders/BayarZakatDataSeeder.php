@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\BayarZakat;
+use App\Models\Muzzaki;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
@@ -14,11 +15,14 @@ class BayarZakatDataSeeder extends Seeder
      */
     public function run(): void
     {
-        $json = File::get(database_path('seeders/dummy/bayarzakat.json'));
-        $data = json_decode($json, true);
+        $data = Muzzaki::pluck('nama_muzzaki');
 
+
+        echo($data);
         foreach ($data as $item) {
-            BayarZakat::create($item);
+            BayarZakat::create([
+                'nama_kk' => $item
+            ]);
         }
     }
 }

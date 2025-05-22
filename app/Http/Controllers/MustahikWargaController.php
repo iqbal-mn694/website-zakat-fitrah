@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Mustahik_Warga;
+use App\Models\MustahikWarga;
 use App\Models\AturanZakat;
 use Illuminate\Http\Request;
 
@@ -23,7 +23,7 @@ class MustahikWargaController extends Controller
             'id_aturan_zakat' => 'required|exists:aturan_zakat,id_aturan_zakat'
         ]);
 
-        Mustahik_Warga::create([
+        MustahikWarga::create([
             'nama_mustahik' => $request->nama_mustahik,
             'kategori' => $request->kategori,
             'hak' => $request->hak,
