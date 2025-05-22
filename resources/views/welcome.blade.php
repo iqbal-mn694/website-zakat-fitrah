@@ -58,7 +58,7 @@
             @if (Route::has('login'))
                     @auth
                     @else
-                                <a href="{{ route('login') }}" class="text-gray-700 hover:text-emerald-600 px-3 py-2">Log in</a>
+                                <a href="{{ url('/admin/login') }}" class="text-gray-700 hover:text-emerald-600 px-3 py-2">Log in</a>
                             @endauth
                         @endif
                     </div>

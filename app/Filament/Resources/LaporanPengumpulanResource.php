@@ -15,7 +15,7 @@ class LaporanPengumpulanResource extends Resource
 
     // protected static ?string $navigationIcon = 'heroicon-o-collection';
 
-    protected static ?string $navigationLabel = 'Laporan Pengumpulan';
+    protected static ?string $navigationLabel = 'Pengumpulan Zakat';
 
     protected static ?int $navigationSort = 3;  // Untuk menambah urutan di sidebar admin
 
