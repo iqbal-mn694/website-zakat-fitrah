@@ -12,6 +12,7 @@ class LaporanPengumpulan extends Page
     protected static string $view = 'filament.pages.laporan-pengumpulan';
     protected static ?string $navigationGroup = 'Laporan';
     protected static ?string $navigationLabel = 'Laporan Pengumpulan Zakat';
+    protected static ?int $navigationSort = 20;
 
     public function getViewData(): array
     {

@@ -14,33 +14,26 @@ class LaporanController extends Controller
 {
     public function pengumpulan()
     {
-        // Data pengumpulan zakat
         $pengumpulanZakat = BayarZakat::orderBy('created_at', 'desc')->get();
         
-        // Total muzakki = jumlah unik nama_kk
         $totalMuzakki = BayarZakat::distinct('nama_kk')->count('nama_kk');
         
-        // Total jiwa = jumlah total tanggungan bayar
         $totalJiwa = BayarZakat::sum('jumlah_tanggungan_bayar');
         
-        // Total zakat terkumpul
         $totalBeras = BayarZakat::where('jenis_bayar', 'beras')
             ->sum(DB::raw('CAST(bayar_beras AS DECIMAL(10,2))'));
         $totalUang = BayarZakat::where('jenis_bayar', 'uang')
             ->sum(DB::raw('CAST(bayar_uang AS DECIMAL(15,2))'));
 
-        // Total zakat yang sudah didistribusikan
-        $totalDistribusiBeras = DB::table('mustahik__wargas')->sum('hak') + 
+        $totalDistribusiBeras = DB::table('mustahik_wargas')->sum('hak') + 
                                DB::table('mustahik_lainnyas')->sum('total_beras');
 
-        // Sisa zakat yang belum didistribusikan
         $sisaBeras = $totalBeras - $totalDistribusiBeras;
         
-        // Konversi uang ke beras (asumsi harga beras rata-rata)
         $hargaBerasRataRata = DB::table('aturan_zakat')->avg('harga_beras_per_kg');
+
         $berasFromUang = $totalUang / $hargaBerasRataRata;
         
-        // Total keseluruhan dalam bentuk beras
         $totalKeseluruhanBeras = $totalBeras + $berasFromUang;
         
         return view('laporan.pengumpulan', compact(
@@ -59,8 +52,7 @@ class LaporanController extends Controller
 
     public function distribusi()
     {
-        // Rekap warga: group by kategori dan aturan zakat
-        $rekapWarga = DB::table('mustahik__wargas as mw')
+        $rekapWarga = DB::table('mustahik_wargas as mw')
             ->join('aturan_zakat as az', 'mw.id_aturan_zakat', '=', 'az.id')
             ->select(
                 'mw.kategori',
@@ -82,7 +74,6 @@ class LaporanController extends Controller
             ];
         });
 
-        // Rekap lainnya: group by kategori dan aturan zakat
         $rekapLainnya = DB::table('mustahik_lainnyas as ml')
             ->join('aturan_zakat as az', 'ml.id_aturan_zakat', '=', 'az.id')
             ->select(
@@ -105,8 +96,7 @@ class LaporanController extends Controller
             ];
         });
 
-        // Hitung total distribusi beras
-        $totalDistribusiBeras = DB::table('mustahik__wargas')->sum('hak') + 
+        $totalDistribusiBeras = DB::table('mustahik_wargas')->sum('hak') + 
                                DB::table('mustahik_lainnyas')->sum('total_beras');
 
         return view('laporan.distribusi', compact(

@@ -19,6 +19,8 @@ class PengumpulanZakatResource extends Resource
     protected static ?string $navigationGroup = 'Transaksi';
 
     protected static ?string $navigationLabel = 'Pengumpulan Zakat Fitrah';
+    
+    protected static ?int $navigationSort = 10;
 
     public static function form(Form $form): Form
     {

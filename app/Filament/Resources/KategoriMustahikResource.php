@@ -22,6 +22,8 @@ class KategoriMustahikResource extends Resource
     protected static ?string $navigationGroup = 'Master Data';
 
     protected static ?string $navigationLabel = 'Kategori Mustahik';
+    
+    protected static ?int $navigationSort = 1;
 
     public static function form(Form $form): Form
     {

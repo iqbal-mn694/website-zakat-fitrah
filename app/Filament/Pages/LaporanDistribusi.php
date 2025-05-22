@@ -12,7 +12,7 @@ class LaporanDistribusi extends Page
 
     protected static ?string $navigationGroup = 'Laporan';
     protected static ?string $navigationLabel = 'Laporan Distribusi Zakat';
-    protected static ?int $navigationSort = 4;
+    protected static ?int $navigationSort = 21;
 
 
     public array $rekapWarga = [];
